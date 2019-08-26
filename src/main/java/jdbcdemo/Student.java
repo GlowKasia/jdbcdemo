@@ -5,7 +5,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
-@AllArgsConstructor
+//@AllArgsConstructor
 @NoArgsConstructor
 public class Student {
     private Long id;
@@ -14,5 +14,11 @@ public class Student {
     private Double average;
     private boolean alive;
 
-
+    public Student(Long id, String name, int age, Double average, boolean alive) {
+        this.id = id;
+        this.name = name;
+        this.age = age;
+        this.average = average;
+        this.alive = alive;
+    }
 }
